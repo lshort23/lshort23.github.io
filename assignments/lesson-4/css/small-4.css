@@ -18,3 +18,26 @@ header img, .headings {
     width: 50px;
     height: auto;
 }
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li a {
+    display: block;
+    color: #7FB7BE;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+
+  li a:hover {
+    background-color:#AEB7B3;
+    color: #000000;
+  }
+
+  .active {
+    background-color: #AEB7B3;
+    color: #000000;
+  }
