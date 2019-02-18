@@ -12,6 +12,6 @@ function todayDate() {
 
   var n = weekday[d.getDay()];
 
-  document.getElementById("currentDate").innerHTML = n;
+  document.getElementById("answer").innerHTML = n;
 }
 </script>
