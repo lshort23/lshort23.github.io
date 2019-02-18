@@ -1,5 +1,5 @@
 <script>
-function currentDate() {
+function todayDate() {
   var d = new Date();
   var weekday = new Array(7);
   weekday[0] = "Sunday";
@@ -11,7 +11,7 @@ function currentDate() {
   weekday[6] = "Saturday";
 
   var n = weekday[d.getDay()];
-  
+
   document.getElementById("currentDate").innerHTML = n;
 }
 </script>
