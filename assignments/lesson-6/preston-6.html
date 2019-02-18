@@ -12,7 +12,12 @@
     </head>
     <body>
         <header>
-                <img src="images/hero-image-optimized.jpg" alt="Hero Image">
+                <figure class="heroImage">
+                    <img src="images/hero-image-optimized.jpg" alt="Hero Image" sizes="50vw"
+                        srcset="images/hero-image-optimized-small.jpg 400w,
+                                images/hero-image-optimized-large.jpg 1000,">
+                    <figcaption>Hero Image</figcaption>
+                </figure>
                 <img src="images/sivvus-weather-symbols-2-optimized.png" alt="Preston Weather Page Logo">
                 <h1>Preston Weather Page</h1>
                 <div class="motto">We've got your covered</div>     
@@ -33,15 +38,13 @@
 
         <main>
             <h2>Preston, Idaho</h2>
-            <div class="herodiv">
-                <img src="images/preston-idaho-optimized.jpg">
+            <img src="images/preston-idaho-optimized.jpg" alt="Preston, Idaho">
                 <section class="stats">
-                <h3>Statistics</h3>
-                <p>Label: <span id="value1">Value</span</p>
-                <p>Label: Value</p>
-                <p>Label: Value</p>
-            </section>
-            </div>
+                    <h3>Statistics</h3>
+                    <p>Label: <span id="value1">Value</span</p>
+                    <p>Label: Value</p>
+                    <p>Label: Value</p>
+                </section>
         </main>
 
         <article>
