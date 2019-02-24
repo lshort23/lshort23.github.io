@@ -25,8 +25,8 @@
         </header>
 
         <nav>
-            <ul>
-                <li><a href="assignments/lesson-7/preston-7.html">Home</a></li>
+            <ul class="navigation">
+                <li><a href="assignments/lesson-7/preston-7.html" onclick="toggleMenu()">Home</a></li>
                 <li><a href="">Preston</a></li>
                 <li><a href="">Soda Springs</a></li>
                 <li><a href="">Fish Haven</a></li>
@@ -41,10 +41,10 @@
             <div class="herodiv">
                 <img src="images/preston-idaho-optimized.jpg" alt="Preston, Idaho">
                 <section class="stats">
-                    <h3>Statistics</h3>
-                    <p>Label: <span id="value1">Value</span</p>
-                    <p>Label: Value</p>
-                    <p>Label: Value</p>
+                    <h3 onload="windChill()">Statistics</h3>
+                    <p>Temperature: <span id="temp">50</span></p>
+                    <p>wind: <span id="wind">30</span></p>
+                    <p>Wind Chill: <div id="output"></div></p>
                 </section>
                 </div>
         </main>
