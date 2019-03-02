@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <title>Preston Weather Page</title>
+        <meta name="description" content="The home page for the Preston Weather Page.">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/small-8.css">
+        <link rel="stylesheet" media="screen and (min-width: 1025px)" href="css/large-8.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat">
+        <script type="text/javascript" src="script/currentdate.js"></script>
+        <script type="text/javascript" src="script/adjustrating.js"></script>
+    </head>
+    <body>
+
+        <header>
+                <figure class="heroImage">
+                    <img src="images/hero-image-optimized.jpg" alt="Hero Image" sizes="50vw"
+                        srcset="images/hero-image-optimized-small.jpg 400w,
+                                images/hero-image-optimized-large.jpg 1000w,">
+                </figure>
+                <img src="images/sivvus-weather-symbols-2-optimized.png" alt="Preston Weather Page Logo">
+                <h1>Preston Weather Page</h1>
+                <div class="motto">We've got you covered</div>     
+        </header>
+
+        <nav>
+            <ul class="navigation">
+                <li><a href="preston-8.html" onclick="toggleMenu()">Home</a></li>
+                <li><a href="preston-8.html" onclick="toggleMenu()">Preston</a></li>
+                <li><a href="">Soda Springs</a></li>
+                <li><a href="">Fish Haven</a></li>
+                <li><a href="stormcenter.html" onclick="toggleMenu()">Storm Center</a></li>
+                <li><a href="gallery-8.html" onclick="toggleMenu()">Gallery</a></li>
+            </ul>
+
+        </nav>
+
+        <main>
+           <h1>Thanks for your help!</h1>
+        </main>
+
+        <footer>
+            <body onload="myFunction()">
+            <p id="demo"></p>
+        </footer>
+    </body>
+</html>
