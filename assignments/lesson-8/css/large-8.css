@@ -144,3 +144,7 @@ figcaption {font-size: .75rem;}
   margin-top: 8px;
   vertical-align: middle;
 }
+
+#maybe {
+  display: inline-block;
+}

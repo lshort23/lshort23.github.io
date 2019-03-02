@@ -76,7 +76,7 @@
                 <br>
 
                 Storm Region:<br>
-                <select >
+                <select>
                     <option value="default" disabled>Select Region</option>
                     <option value="preston">Preston</option>
                     <option value="sodasprings">Soda Springs</option>
@@ -84,7 +84,22 @@
                 </select>
                 <br><br>
 
-                <input type="submit" value="Submit">
+                User In-Danger Level:<br>
+                <div><input type="radio" id="yes" name="danger" value="yes" checked>
+                <label for="yes">Yes</label></div>
+                
+                <div><input type="radio" id="maybe" name="danger" value="maybe">
+                <label for="maybe">Maybe</label></div>
+                
+                <div><input type="radio" id="no" name="danger" value="no">
+                <label for="no">No</label></div>
+                <br><br>
+
+                Addition Information or Comments:<br>
+                <textarea name="info" rows="5" cols="30"></textarea>
+                <br><br>
+
+                <input type="submit" name="submit" value="Submit">
             </form> 
         </main>
 
