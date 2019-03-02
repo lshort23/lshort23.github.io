@@ -28,7 +28,7 @@
         <nav>
             <ul class="navigation">
                 <li><a href="preston-8.html" onclick="toggleMenu()">Home</a></li>
-                <li><a href="">Preston</a></li>
+                <li><a href="preston-8.html" onclick="toggleMenu()">Preston</a></li>
                 <li><a href="">Soda Springs</a></li>
                 <li><a href="">Fish Haven</a></li>
                 <li><a href="stormcenter.html" onclick="toggleMenu()">Storm Center</a></li>
@@ -72,10 +72,17 @@
                 
                 <label for="rating">Storm Severity:</label><br>
                 <input type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
-                    <p id="ratingvalue"></p>
-                <br><br>
+                    <p id="ratingvalue">5</p>
+                <br>
 
-                Storm Region
+                Storm Region:<br>
+                <select >
+                    <option value="default" disabled>Select Region</option>
+                    <option value="preston">Preston</option>
+                    <option value="sodasprings">Soda Springs</option>
+                    <option value="fishhaven">Fish Haven</option>
+                </select>
+                <br><br>
 
                 <input type="submit" value="Submit">
             </form> 
