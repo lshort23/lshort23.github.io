@@ -10,6 +10,7 @@
         <link rel="stylesheet" media="screen and (min-width: 1025px)" href="css/large-8.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat">
         <script type="text/javascript" src="script/currentdate.js"></script>
+        <script type="text/javascript" src="script/adjustrating.js"></script>
     </head>
     <body>
 
@@ -71,7 +72,7 @@
                 
                 <label for="rating">Storm Severity:</label><br>
                 <input type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
-                    <p id="ratingvalue">5</p>
+                    <p id="ratingvalue"></p>
                 <br><br>
 
                 Storm Region
