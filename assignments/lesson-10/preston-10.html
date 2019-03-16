@@ -14,11 +14,6 @@
     <body>
 
         <header>
-                <figure class="heroImage">
-                    <img src="images/hero-image-optimized.jpg" alt="Hero Image" sizes="50vw"
-                        srcset="images/hero-image-optimized-small.jpg 400w,
-                                images/hero-image-optimized-large.jpg 1000w,">
-                </figure>
                 <img src="images/sivvus-weather-symbols-2-optimized.png" alt="Preston Weather Page Logo">
                 <h1>Preston Weather Page</h1>
                 <div class="motto">We've got you covered</div>     
@@ -40,7 +35,13 @@
         <main>
             <h2>Preston, Idaho</h2>
             <div class="herodiv">
-                <img src="images/preston-idaho-optimized.jpg" alt="Preston, Idaho">
+                <figure>
+                <picture>
+                    <source media="(min-width: 466px)" srcset="images/hero-image-optimized-large.jpg">
+                    <source media="(max-width: 465px)" srcset="images/hero-image-optimized-small.jpg">
+                    <img src="images/hero-image-optimized.jpg" alt="Preston, Idaho" style="width:auto;">
+                  </picture>
+                  </figure>
                 <section class="stats">
                     <h3 onload="windChill()">Statistics</h3>
                     <p>Temperature: <span id="temp">50</span></p>
