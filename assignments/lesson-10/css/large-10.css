@@ -14,11 +14,10 @@ header {
     font-family: "Merriweather", serif;
 }
 
-header img, .headings {
-	display: inline-block;
+header img, .heading .motto {
+  display: inline-block;
 	vertical-align: middle;
     margin: 10px;
-    width: 50px;
     height: auto;
 }
 
