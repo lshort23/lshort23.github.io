@@ -8,13 +8,13 @@ body {
 header {
 	margin: 10px auto;
 	background-color: #7FB7BE;
-	border: 1px solid #AEB7B3;
+	border: 10px solid #7FB7BE;
 	box-shadow: 0 0 30px #AEB7B3;
     text-align: center;
     font-family: "Merriweather", serif;
 }
 
-header img, .headings {
+header img, .heading {
 	display: inline-block;
 	vertical-align: middle;
     margin: 10px;
@@ -50,6 +50,12 @@ ul {
   h2 {text-align: center;font-size:2rem;text-shadow:3px 3px 5px #7FB7BE;}
   
   .herodiv {margin: 10px auto;position: relative;}
+  .herodivpic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
 
   .stats {
 	position: absolute;
@@ -148,7 +154,7 @@ figcaption {font-size: .75rem;}
 /* header styles */
 
 h1 {
-  font-size: 4rem;
+  font-size: 3rem;
   text-align: center;
 }
 
@@ -178,4 +184,8 @@ section ul {
 h2 {
   font-size: 2.5rem;
   margin-bottom: 10px;
+}
+
+.sectionPic {
+  padding: 35px;
 }
