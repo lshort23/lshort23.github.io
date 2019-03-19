@@ -10,8 +10,10 @@
         <link rel="stylesheet" media="screen and (min-width: 1025px)" href="css/large-10.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat">
         <script type="text/javascript" src="script/currentdate.js"></script>
+        <script type="text/javascript" src="script/windchill.js"></script>
+
     </head>
-    <body>
+    <body onload="windChill()">
 
         <header>
                 <img class="logo" src="images/sivvus-weather-symbols-2-optimized.png" alt="Preston Weather Page Logo" width="55px" height="auto">
@@ -43,10 +45,10 @@
                   </picture>
                   </figure>
                 <section class="stats">
-                    <h3 onload="windChill()">Statistics</h3>
+                    <h3>Statistics</h3>
                     <p>Temperature: <span id="temp">50</span></p>
                     <p>wind: <span id="wind">30</span></p>
-                    <p>Wind Chill: <div id="output"></div></p>
+                    <p>Wind Chill: <span id='output'></span></p>
                 </section>
                 </div>
         </main>
