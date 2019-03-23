@@ -8,5 +8,8 @@ weatherRequest.onload = function() {
     let weatherData = JSON.parse(weatherRequest.responseText);
     console.log(weatherData);
 
-document.getElementbyId('temp').innerHTML = weatherData.main.temp;
+document.getElementById('temp').innerHTML = weatherData.main.temp;
+document.getElementById('current').innerHTML = weatherData.main.temp;
+document.getElementById('humid').innerHTML = weatherData.main.humidity;
+document.getElementById('wind').innerHTML = weatherData.wind.speed;
 }

@@ -57,7 +57,7 @@ ul {
   h2 {text-align: center;font-size:2rem;text-shadow:3px 3px 5px #7FB7BE;}
   
   .herodiv {
-       margin: 0 auto; vertical-align: middle; 
+       margin: 0 auto; vertical-align: middle;
   }
 
   .stats {
@@ -196,4 +196,11 @@ h2 {
 
 h3 {
   text-align: center;
+}
+
+#article {
+  width: 50%;
+  padding: 10px;
+  text-align: left;
+  margin-left: 250px;
 }
