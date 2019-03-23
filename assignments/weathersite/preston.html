@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <title>Preston Weather Page</title>
+        <meta name="description" content="The home page for the Preston Weather Page.">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/small.css">
+        <link rel="stylesheet" media="screen and (min-width: 1025px)" href="css/large.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat">
+        <script type="text/javascript" src="script/currentdate.js"></script>
+        <script type="text/javascript" src="script/windchill.js"></script>
+
+    </head>
+    <body onload="windChill()">
+
+        <header>
+                <img class="logo" src="images/sivvus-weather-symbols-2-optimized.png" alt="Preston Weather Page Logo" width="55px" height="auto">
+                <h1 class="heading">Preston Weather Page</h1>
+                <div class="motto">We've got you covered</div>     
+        </header>
+
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" onclick="toggleMenu()">Menu</a></li>
+                <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
+                <li><a href="preston.html" onclick="toggleMenu()">Preston</a></li>
+                <li><a href="">Soda Springs</a></li>
+                <li><a href="">Fish Haven</a></li>
+                <li><a href="stormcenter.html" onclick="toggleMenu()">Storm Center</a></li>
+                <li><a href="gallery.html" onclick="toggleMenu()">Gallery</a></li>
+            </ul>
+
+        </nav>
+
+        <main>
+            <h2>Preston, Idaho</h2>
+            <div class="herodiv">
+                <figure>
+                <picture>
+                    <source media="(min-width: 466px)" srcset="images/hero-image-optimized-large.jpg">
+                    <source media="(max-width: 465px)" srcset="images/hero-image-optimized-small.jpg">
+                    <img src="images/hero-image-optimized.jpg" alt="Preston, Idaho" style="width:auto;">
+                  </picture>
+                </figure>
+                <section class="stats">
+                    <h3>Weather Summary</h3>
+                    <p>Currently: <span id="current"></span></p>
+                    <p>Temperature: <span id="temp"></span> F</p>
+                    <p>Humidity: <span id="humid"></span></p>
+                    <p>Wind Speed: <span id="wind"></span> mph</p>
+                    <p>Wind Chill: <span id='output'></span> F</p>
+                </section>
+                </div>
+        </main>
+
+        <article>
+
+        </article>
+
+        <section>
+
+        </section>
+
+        <footer>
+            <body onload="myFunction()">
+            <p id="demo"></p>
+            <p>Information from <a href="https://openweathermap.org/">Open Weather Map</a>.</p>
+        </footer>
+        <script src="script/weatherapi.js"></script>
+    </body>
+</html>
