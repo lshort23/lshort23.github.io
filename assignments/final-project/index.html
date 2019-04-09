@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <title>Preston Weather Page</title>
+        <meta name="description" content="The home page for the Preston Weather Page.">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/small.css">
+        <link rel="stylesheet" media="screen and (min-width: 1025px)" href="css/large.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat">
+        <script type="text/javascript" src="script/currentdate.js"></script>
+    </head>
+    <body onload="myFunction()">
+
+        <header>
+            <img class="logo" src="images/sivvus-weather-symbols-2-optimized.png" alt="Preston Weather Page Logo" width="55px" height="auto">
+            <h1 class="heading">Preston Weather Page</h1>
+            <div class="motto">We've got you covered</div>     
+        </header>
+
+        <nav>
+            <ul class="navigation">
+                    <li><a href="#" onclick="toggleMenu()">Menu</a></li>
+                    <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
+                    <li><a href="preston.html" onclick="toggleMenu()">Preston</a></li>
+                    <li><a href="sodasprings.html" onclick="toggleMenu()">Soda Springs</a></li>
+                    <li><a href="fishhaven.html" onclick="toggleMenu()">Fish Haven</a></li>
+                    <li><a href="stormcenter.html" onclick="toggleMenu()">Storm Center</a></li>
+                    <li><a href="gallery.html" onclick="toggleMenu()">Gallery</a></li>
+            </ul>
+
+        </nav>
+
+       <main>
+          
+            <section>
+          
+            </section>
+
+            <img class="sectionPic" src="images/fish-haven-idaho.jpg" width="200px">
+            <img class="sectionPic" src="images/preston-idaho-homepage.jpg" width="200px">
+            <img class="sectionPic" src="images/soda-springs-idaho.jpg" width="200px">
+       
+       <script>
+            var section = document.querySelector('section');
+            var requestURL = 'https://lshort23.github.io/assignments/weathersite/towndata.json';
+            var request = new XMLHttpRequest();
+            request.open('GET', requestURL);
+            request.responseType = 'json';
+            request.send();
+            request.onload = function() {
+            var townData = request.response;
+            showTowns(townData);
+            }
+        
+            function showTowns(jsonObj) {
+                var towns = jsonObj['towns'];
+              
+                for (var i = 0; i < towns.length; i++) {
+                    var myArticle = document.createElement('article');
+                    var myH2 = document.createElement('h2');
+                    var myPara1 = document.createElement('p');
+                    var myPara2 = document.createElement('p');
+                    var myPara3 = document.createElement('p');
+                    var myPara4 = document.createElement('p');
+        
+                myH2.textContent = towns[i].name;
+                myPara1.textContent = towns[i].motto;
+                myPara2.textContent = 'Year Founded: ' + towns[i].yearFounded;
+                myPara3.textContent = 'Population: ' + towns[i].currentPopulation;
+                myPara4.textContent = 'Annual Rain Fall: ' + towns[i].averageRainfall + '"';
+        
+            myArticle.appendChild(myH2);
+            myArticle.appendChild(myPara1);
+            myArticle.appendChild(myPara2);
+            myArticle.appendChild(myPara3);
+            myArticle.appendChild(myPara4);
+        
+            section.appendChild(myArticle);
+                }
+            }
+            
+            </script>
+            </main>
+
+    <div style="clear: both">
+    <footer>
+    <p id="demo"></p>
+    </footer>
+    </div>
+</body>
+</html>
