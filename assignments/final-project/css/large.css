@@ -43,7 +43,7 @@ nav {
 	color:#7A9B7E;
 	text-align: center;
 	padding: 1rem;
-	text-decoration: none;
+	text-decoration: overline;
 	font-size: 1.25rem;
 }
 .navigation li a:hover {
