@@ -6,21 +6,30 @@ body {
   text-align: center;
 }
 
+/*header*/
+
 header {
 	margin: 10px auto;
-	background-color: #7FB7BE;
-	border: 10px solid #7FB7BE;
-	box-shadow: 0 0 30px #AEB7B3;
-    text-align: center;
-    font-family: "Merriweather", serif;
+	background-color: #ffffff;
+	border: 10px solid #ffffff;
+  text-align: center;
+  font-family: 'Playfair Display SC', serif;
+  color: #7A9B7E
 }
 
-header img, .heading {
-	display: inline-block;
-	vertical-align: middle;
-    margin: 10px;
-    height: auto;
+h1 {
+  font-size: 2.2rem;
+  text-align: center;
 }
+
+
+
+
+
+
+
+
+
 
 ul {
     list-style-type: none;

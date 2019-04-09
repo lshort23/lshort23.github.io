@@ -1,0 +1,23 @@
+body {
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    text-align: center;
+  }
+
+  /*header*/
+
+header {
+	margin: 10px auto;
+	background-color: #ffffff;
+	border: 10px solid #ffffff;
+  text-align: center;
+  font-family: 'Playfair Display SC', serif;
+  color: #7A9B7E
+}
+
+h1 {
+  font-size: 2.2rem;
+  text-align: center;
+}
