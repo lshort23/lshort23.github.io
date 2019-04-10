@@ -27,65 +27,28 @@
                     <li><a href="services.html" onclick="toggleMenu()">Services</a></li>
                     <li><a href="contact.html" onclick="toggleMenu()">Contact</a></li>
             </ul>
-
         </nav>
 
        <main>
-          
+           <section>
+                <div>
+                    <img class="templePic" src="images/fish-haven-idaho.jpg" width="400px">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.</p>
+                </div>
+           </section>
+
             <section>
-          
+                <div>
+                    <img class="sectionPic" src="images/fish-haven-idaho.jpg" width="200px">
+                    <img class="sectionPic" src="images/preston-idaho-homepage.jpg" width="200px">
+                    <img class="sectionPic" src="images/soda-springs-idaho.jpg" width="200px">
+                </div>
             </section>
+        </main>
+    </body>
 
-            <img class="sectionPic" src="images/fish-haven-idaho.jpg" width="200px">
-            <img class="sectionPic" src="images/preston-idaho-homepage.jpg" width="200px">
-            <img class="sectionPic" src="images/soda-springs-idaho.jpg" width="200px">
-       
-       <script>
-            var section = document.querySelector('section');
-            var requestURL = 'https://lshort23.github.io/assignments/weathersite/towndata.json';
-            var request = new XMLHttpRequest();
-            request.open('GET', requestURL);
-            request.responseType = 'json';
-            request.send();
-            request.onload = function() {
-            var townData = request.response;
-            showTowns(townData);
-            }
-        
-            function showTowns(jsonObj) {
-                var towns = jsonObj['towns'];
-              
-                for (var i = 0; i < towns.length; i++) {
-                    var myArticle = document.createElement('article');
-                    var myH2 = document.createElement('h2');
-                    var myPara1 = document.createElement('p');
-                    var myPara2 = document.createElement('p');
-                    var myPara3 = document.createElement('p');
-                    var myPara4 = document.createElement('p');
-        
-                myH2.textContent = towns[i].name;
-                myPara1.textContent = towns[i].motto;
-                myPara2.textContent = 'Year Founded: ' + towns[i].yearFounded;
-                myPara3.textContent = 'Population: ' + towns[i].currentPopulation;
-                myPara4.textContent = 'Annual Rain Fall: ' + towns[i].averageRainfall + '"';
-        
-            myArticle.appendChild(myH2);
-            myArticle.appendChild(myPara1);
-            myArticle.appendChild(myPara2);
-            myArticle.appendChild(myPara3);
-            myArticle.appendChild(myPara4);
-        
-            section.appendChild(myArticle);
-                }
-            }
-            
-            </script>
-            </main>
-
-    <div style="clear: both">
     <footer>
-    <p id="demo"></p>
+        <p>2019 The Temple Inn & Suites | <a href="#">Resources</a></p>
     </footer>
-    </div>
-</body>
+
 </html>

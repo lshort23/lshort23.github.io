@@ -74,3 +74,58 @@
         <script src="script/weatherapi.js"></script>
     </body>
 </html>
+
+
+
+
+<main>
+          
+    <section>
+  
+    </section>
+
+    <img class="sectionPic" src="images/fish-haven-idaho.jpg" width="200px">
+    <img class="sectionPic" src="images/preston-idaho-homepage.jpg" width="200px">
+    <img class="sectionPic" src="images/soda-springs-idaho.jpg" width="200px">
+
+<script>
+    var section = document.querySelector('section');
+    var requestURL = 'https://lshort23.github.io/assignments/weathersite/towndata.json';
+    var request = new XMLHttpRequest();
+    request.open('GET', requestURL);
+    request.responseType = 'json';
+    request.send();
+    request.onload = function() {
+    var townData = request.response;
+    showTowns(townData);
+    }
+
+    function showTowns(jsonObj) {
+        var towns = jsonObj['towns'];
+      
+        for (var i = 0; i < towns.length; i++) {
+            var myArticle = document.createElement('article');
+            var myH2 = document.createElement('h2');
+            var myPara1 = document.createElement('p');
+            var myPara2 = document.createElement('p');
+            var myPara3 = document.createElement('p');
+            var myPara4 = document.createElement('p');
+
+        myH2.textContent = towns[i].name;
+        myPara1.textContent = towns[i].motto;
+        myPara2.textContent = 'Year Founded: ' + towns[i].yearFounded;
+        myPara3.textContent = 'Population: ' + towns[i].currentPopulation;
+        myPara4.textContent = 'Annual Rain Fall: ' + towns[i].averageRainfall + '"';
+
+    myArticle.appendChild(myH2);
+    myArticle.appendChild(myPara1);
+    myArticle.appendChild(myPara2);
+    myArticle.appendChild(myPara3);
+    myArticle.appendChild(myPara4);
+
+    section.appendChild(myArticle);
+        }
+    }
+    
+    </script>
+    </main>
