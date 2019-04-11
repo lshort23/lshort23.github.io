@@ -50,38 +50,44 @@
 
             <script>
                 var section = document.querySelector('section');
-                var requestURL = 'https://lshort23.github.io/assignments/weathersite/towndata.json';
+                var requestURL = 'https://lshort23.github.io/assignments/final-project/orlando.json';
                 var request = new XMLHttpRequest();
                 request.open('GET', requestURL);
                 request.responseType = 'json';
                 request.send();
                 request.onload = function() {
-                var townData = request.response;
-                showTowns(townData);
+                var orlandoInfo = request.response;
+                showInfo(orlandoInfo);
                 }
                 
-                function showTowns(jsonObj) {
-                    var towns = jsonObj['towns'];
+                function orlandoInfo(jsonObj) {
+                    var towns = jsonObj['orlando'];
                       
-                    for (var i = 0; i < towns.length; i++) {
+                    for (var i = 0; i < orlando.length; i++) {
                         var myArticle = document.createElement('article');
                         var myH2 = document.createElement('h2');
+                        var myH22 = document.createElement('h2');
                         var myPara1 = document.createElement('p');
                         var myPara2 = document.createElement('p');
                         var myPara3 = document.createElement('p');
                         var myPara4 = document.createElement('p');
+                        var myPara5 = document.createElement('p');
                 
-                    myH2.textContent = towns[i].name;
-                    myPara1.textContent = towns[i].motto;
-                    myPara2.textContent = 'Year Founded: ' + towns[i].yearFounded;
-                    myPara3.textContent = 'Population: ' + towns[i].currentPopulation;
-                    myPara4.textContent = 'Annual Rain Fall: ' + towns[i].averageRainfall + '"';
+                    myH2.textContent = orlando[i].address;
+                    myH22.textContent = orlando[i].phoneNumber;
+                    myPara1.textContent = 'Services: ' + orlando[i].services;
+                    myPara2.textContent = 'History: ' + orlando[i].history;
+                    myPara3.textContent = 'Ordinance Schedule: ' + orlando[i].ordinanceSchedule;
+                    myPara4.textContent = 'Session Schedule: ' + orlando[i].sessionSchedule;
+                    myPara5.textContent = 'Temple Closure Dates: ' + orlando[i].templeClosureDates;
                 
                 myArticle.appendChild(myH2);
+                myArticle.appendChild(myH22);
                 myArticle.appendChild(myPara1);
                 myArticle.appendChild(myPara2);
                 myArticle.appendChild(myPara3);
                 myArticle.appendChild(myPara4);
+                myArticle.appendChild(myPara5);
                 
                 section.appendChild(myArticle);
                 }
