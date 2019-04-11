@@ -1,0 +1,53 @@
+{
+    "spokane" : [
+    {
+      "address": [
+      "9000 Windy Ridge Rd",
+      "Windermere FL 34786-8347",
+      "United States"
+      ],
+      "phoneNumber": "(1) 407-876-0022",
+      "services": [
+        "Clothing rental available",
+        "No cafeteria available",
+        "No patron housing available",
+        "Distribution center nearby"
+      ],
+      "history": [
+        "April 6th, 1991      Announced",
+        "June 20th, 1992      Groundbreaking",
+        "October 9th, 1994    Dedicated"
+      ],
+      "ordinanceSchedule": [
+      "8:30 AM - 4:30 PM      Family Priority Time - Appointments Only",
+      "4:30 PM - 6:30 PM      Walk-ins and Appointments",
+      "6:30 PM - 8:30 PM      Church Groups - Walk-ins and Appointments"
+      ],
+      "sessionSchedule" : [
+      "8:00 AM                Walk-ins and Appointments",
+      "9:00 AM                Walk-ins and Appointments",
+      "10:00 AM               Walk-ins and Appointments",
+      "11:00 AM               Walk-ins and Appointments",
+      "12:00 PM               Walk-ins and Appointments",
+      " 1:00 PM               Walk-ins and Appointments",
+      " 2:00 PM               Walk-ins and Appointments",
+      " 3:00 PM               Walk-ins and Appointments",
+      " 4:00 PM               Walk-ins and Appointments",
+      " 5:30 PM               Walk-ins and Appointments",
+      " 6:15 PM               Walk-ins and Appointments",
+      " 7:00 PM               Walk-ins and Appointments",
+      " 7:30 PM               Walk-ins and Appointments"
+      ],
+      "templeClosureSchedule": [
+      "2019",
+      "Monday, 24 June 2019 - Monday, 8 July 2019",
+      "Saturday, 5 October 2019",
+      "Wednesday, 27 November 2019 (Limited Hours)",
+      "Thursday, 28 November 2019",
+      "Monday, 2 December 2019 - Monday, 16 December 2019",
+      "Tuesday, 24 December 2019 - Wednesday, 25 December 2019",
+      "Tuesday, 31 December 2019 - Wednesday, 1 January 2020"
+      ]
+    }
+   ]
+  }
