@@ -44,6 +44,7 @@
             <img src="#" alt="">
 
             <section>
+                <h1>Here is a heading</h1>
 
             </section>
 
@@ -64,10 +65,15 @@
                       
                     for (var i = 0; i < orlando.length; i++) {
                         var myArticle = document.createElement('article');
-                        var myH21 = document.createElement('h2');
+                        var myH31 = document.createElement('h3');
+                        var myH32 = document.createElement('h3');
+                        var myH33 = document.createElement('h3');
+                        var myH34 = document.createElement('h3');
+                        var myh21 = document.createElement('h2');
                         var myH22 = document.createElement('h2');
-                        var myH23 = document.createElement('h2');
-                        var myH24 = document.createElement('h2');
+                        var myh23 = document.createElement('h2');
+                        var myh24 = document.createElement('h2');
+                        var myh25 = document.createElement('h2');
                         var myPara1 = document.createElement('p');
                         var myPara2 = document.createElement('p');
                         var myPara3 = document.createElement('p');
@@ -100,21 +106,25 @@
                         var myPara30 = document.createElement('p');
                         var myPara31 = document.createElement('p');
                 
-                    myH21.textContent = orlando[i].address1;
-                    myH22.textContent = orlando[i].address2;
-                    myH23.textContent = orlando[i].address3;
-                    myH24.textContent = orlando[i].phoneNumber;
-                    myPara1.textContent = 'Services:' + "\n" + orlando[i].services1;
+                    myH31.textContent = orlando[i].address1;
+                    myH32.textContent = orlando[i].address2;
+                    myH33.textContent = orlando[i].address3;
+                    myH34.textContent = orlando[i].phoneNumber;
+                    myH21.textContent = orlando[i].services;
+                    myPara1.textContent = orlando[i].services1;
                     myPara2.textContent = orlando[i].services2;
                     myPara3.textContent = orlando[i].services3;
                     myPara4.textContent = orlando[i].services4;
-                    myPara5.textContent = 'History:' + "\n" + orlando[i].history1;
+                    myH22.textContent = orlando[i].history;
+                    myPara5.textContent = orlando[i].history1;
                     myPara6.textContent = orlando[i].history2;
                     myPara7.textContent = orlando[i].history3;
-                    myPara8.textContent = 'Ordinance Schedule:' + "\n" + orlando[i].ordinanceSchedule1;
+                    myH23.textContent = orlando[i].ordinanceSchedule;
+                    myPara8.textContent = orlando[i].ordinanceSchedule1;
                     myPara9.textContent = orlando[i].ordinanceSchedule2;
                     myPara10.textContent = orlando[i].ordinanceSchedule3;
-                    myPara11.textContent = 'Session Schedule:' + "\n" + orlando[i].sessionSchedule1;
+                    myH24.textContent = orlando[i].sessionSchedule;
+                    myPara11.textContent = orlando[i].sessionSchedule1;
                     myPara12.textContent = orlando[i].sessionSchedule2;
                     myPara13.textContent = orlando[i].sessionSchedule3;
                     myPara14.textContent = orlando[i].sessionSchedule4;
@@ -127,7 +137,8 @@
                     myPara21.textContent = orlando[i].sessionSchedule11;
                     myPara22.textContent = orlando[i].sessionSchedule12;
                     myPara23.textContent = orlando[i].sessionSchedule13;
-                    myPara24.textContent = 'Temple Closure Dates:' + "\n" + orlando[i].templeClosureSchedule1;
+                    myH25.textContent = orlando[i].templeClosureSchedule;
+                    myPara24.textContent = orlando[i].templeClosureSchedule1;
                     myPara25.textContent = orlando[i].templeClosureSchedule2;
                     myPara26.textContent = orlando[i].templeClosureSchedule3;
                     myPara27.textContent = orlando[i].templeClosureSchedule4;
@@ -136,20 +147,24 @@
                     myPara30.textContent = orlando[i].templeClosureSchedule7;
                     myPara31.textContent = orlando[i].templeClosureSchedule8;
                 
+                myArticle.appendChild(myH31);
+                myArticle.appendChild(myH32);
+                myArticle.appendChild(myH33);
+                myArticle.appendChild(myH34);
                 myArticle.appendChild(myH21);
-                myArticle.appendChild(myH22);
-                myArticle.appendChild(myH23);
-                myArticle.appendChild(myH24);
                 myArticle.appendChild(myPara1);
                 myArticle.appendChild(myPara2);
                 myArticle.appendChild(myPara3);
                 myArticle.appendChild(myPara4);
+                myArticle.appendChild(myH22);
                 myArticle.appendChild(myPara5);
                 myArticle.appendChild(myPara6);
                 myArticle.appendChild(myPara7);
+                myArticle.appendChild(myH23);
                 myArticle.appendChild(myPara8);
                 myArticle.appendChild(myPara9);
                 myArticle.appendChild(myPara10);
+                myArticle.appendChild(myH24);
                 myArticle.appendChild(myPara11);
                 myArticle.appendChild(myPara12);
                 myArticle.appendChild(myPara13);
@@ -163,6 +178,7 @@
                 myArticle.appendChild(myPara21);
                 myArticle.appendChild(myPara22);
                 myArticle.appendChild(myPara23);
+                myArticle.appendChild(myH25);
                 myArticle.appendChild(myPara24);
                 myArticle.appendChild(myPara25);
                 myArticle.appendChild(myPara26);

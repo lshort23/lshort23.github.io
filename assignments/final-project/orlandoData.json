@@ -7,19 +7,23 @@
 
       "phoneNumber": "(1) 407-876-0022",
      
+      "services": "Services",
       "services1": "Clothing rental available",
       "services2": "No cafeteria available",
       "services3": "No patron housing available",
       "services4": "Distribution center nearby",
       
+      "history": "Temple History",
       "history1": "April 6th, 1991 - Announced",
       "history2": "June 20th, 1992 - Groundbreaking",
       "history3": "October 9th, 1994 - Dedicated",
 
+      "ordinanceSchedule": "Ordinance Schedule",
       "ordinanceSchedule1": "8:30 AM - 4:30 PM - Family Priority Time - Appointments Only",
       "ordianceSchedule2": "4:30 PM - 6:30 PM - Walk-ins and Appointments",
       "ordianceSchedule3": "6:30 PM - 8:30 PM - Church Groups - Walk-ins and Appointments",
 
+      "sessionSchedule": "Session Schedule",
       "sessionSchedule1": " 8:00 AM - Walk-ins and Appointments",
       "sessionSchedule2": " 9:00 AM - Walk-ins and Appointments",
       "sessionSchedule3": "10:00 AM - Walk-ins and Appointments",
@@ -34,6 +38,7 @@
       "sessionSchedule12": " 7:00 PM - Walk-ins and Appointments",
       "sessionSchedule13": " 7:30 PM - Walk-ins and Appointments",
       
+      "templeClosureSchedule": "Temple Closure Dates",
       "templeClosureSchedule1": "2019",
       "templeClosureSchedule2": "Monday, 24 June 2019 - Monday, 8 July 2019",
       "templeClosureSchedule3": "Saturday, 5 October 2019",
