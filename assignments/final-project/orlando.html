@@ -10,9 +10,8 @@
         <link rel="stylesheet" media="screen and (max-width: 992px)" href="css/medium.css">
         <link rel="stylesheet" href="css/large.css">
         <link href="https://fonts.googleapis.com/css?family=Montserrat|Playfair+Display+SC" rel="stylesheet">
-        <script type="text/javascript" src=""></script>
     </head>
-    <body onload="myFunction()">
+    <body>
 
         <header>
             <h1 class="heading">The Temple Inn & Suites</h1>    
@@ -50,18 +49,18 @@
 
             <script>
                 var section = document.querySelector('section');
-                var requestURL = 'https://lshort23.github.io/assignments/final-project/orlando.json';
+                var requestURL = 'https://lshort23.github.io/assignments/final-project/orlandoData.json';
                 var request = new XMLHttpRequest();
                 request.open('GET', requestURL);
                 request.responseType = 'json';
                 request.send();
                 request.onload = function() {
-                var orlandoInfo = request.response;
-                showInfo(orlandoInfo);
+                var orlandoData = request.response;
+                showOrlando(orlandoData);
                 }
                 
-                function orlandoInfo(jsonObj) {
-                    var towns = jsonObj['orlando'];
+                function showOrlando(jsonObj) {
+                    var orlando = jsonObj['orlando'];
                       
                     for (var i = 0; i < orlando.length; i++) {
                         var myArticle = document.createElement('article');
