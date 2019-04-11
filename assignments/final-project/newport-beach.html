@@ -38,32 +38,31 @@
         </nav>
 
         <main>
-            <h2>Orlando, Florida Temple</h2>
-            <p>The first temple built in Florida, the Orlando Florida Temple was one of two temples dedicated by President Howard W. Hunter.</p>
+            <h2>Newport Beach, California Temple</h2>
+            <p>Tjfdkl;afda;fia;fdilsafidisafeiaopfd;ajfkld;asifoehiela;lfdkdiaheog;ahfidas;ieof[hegoagel;afid;afdlfdaihila;fdkfdaifeifdsal;fjdk;lldifndfklaf jdskal;fjeighioa</p>
             
-            <img src="#" alt="">
+            <img src="images/newport-beach-temple.jpeg" alt="Newport Beach Temple" width="800px">
 
             <section>
-                <h1>Here is a heading</h1>
 
             </section>
 
             <script>
                 var section = document.querySelector('section');
-                var requestURL = 'https://lshort23.github.io/assignments/final-project/orlandoData.json';
+                var requestURL = 'https://lshort23.github.io/assignments/final-project/newportBeachData.json';
                 var request = new XMLHttpRequest();
                 request.open('GET', requestURL);
                 request.responseType = 'json';
                 request.send();
                 request.onload = function() {
-                var orlandoData = request.response;
-                showOrlando(orlandoData);
+                var newportBeachData = request.response;
+                showNewportBeach(newportBeachData);
                 }
                 
-                function showOrlando(jsonObj) {
-                    var orlando = jsonObj['orlando'];
+                function showNewportBeach(jsonObj) {
+                    var newportBeach = jsonObj['newportBeach'];
                       
-                    for (var i = 0; i < orlando.length; i++) {
+                    for (var i = 0; i < newportBeach.length; i++) {
                         var myArticle = document.createElement('article');
                         var myH31 = document.createElement('h3');
                         var myH32 = document.createElement('h3');
@@ -106,46 +105,46 @@
                         var myPara30 = document.createElement('p');
                         var myPara31 = document.createElement('p');
                 
-                    myH31.textContent = orlando[i].address1;
-                    myH32.textContent = orlando[i].address2;
-                    myH33.textContent = orlando[i].address3;
-                    myH34.textContent = orlando[i].phoneNumber;
-                    myH21.textContent = orlando[i].services;
-                    myPara1.textContent = orlando[i].services1;
-                    myPara2.textContent = orlando[i].services2;
-                    myPara3.textContent = orlando[i].services3;
-                    myPara4.textContent = orlando[i].services4;
-                    myH22.textContent = orlando[i].history;
-                    myPara5.textContent = orlando[i].history1;
-                    myPara6.textContent = orlando[i].history2;
-                    myPara7.textContent = orlando[i].history3;
-                    myH23.textContent = orlando[i].ordinanceSchedule;
-                    myPara8.textContent = orlando[i].ordinanceSchedule1;
-                    myPara9.textContent = orlando[i].ordinanceSchedule2;
-                    myPara10.textContent = orlando[i].ordinanceSchedule3;
-                    myH24.textContent = orlando[i].sessionSchedule;
-                    myPara11.textContent = orlando[i].sessionSchedule1;
-                    myPara12.textContent = orlando[i].sessionSchedule2;
-                    myPara13.textContent = orlando[i].sessionSchedule3;
-                    myPara14.textContent = orlando[i].sessionSchedule4;
-                    myPara15.textContent = orlando[i].sessionSchedule5;
-                    myPara16.textContent = orlando[i].sessionSchedule6;
-                    myPara17.textContent = orlando[i].sessionSchedule7;
-                    myPara18.textContent = orlando[i].sessionSchedule8;
-                    myPara19.textContent = orlando[i].sessionSchedule9;
-                    myPara20.textContent = orlando[i].sessionSchedule10;
-                    myPara21.textContent = orlando[i].sessionSchedule11;
-                    myPara22.textContent = orlando[i].sessionSchedule12;
-                    myPara23.textContent = orlando[i].sessionSchedule13;
-                    myH25.textContent = orlando[i].templeClosureSchedule;
-                    myPara24.textContent = orlando[i].templeClosureSchedule1;
-                    myPara25.textContent = orlando[i].templeClosureSchedule2;
-                    myPara26.textContent = orlando[i].templeClosureSchedule3;
-                    myPara27.textContent = orlando[i].templeClosureSchedule4;
-                    myPara28.textContent = orlando[i].templeClosureSchedule5;
-                    myPara29.textContent = orlando[i].templeClosureSchedule6;
-                    myPara30.textContent = orlando[i].templeClosureSchedule7;
-                    myPara31.textContent = orlando[i].templeClosureSchedule8;
+                    myH31.textContent = newportBeach[i].address1;
+                    myH32.textContent = newportBeach[i].address2;
+                    myH33.textContent = newportBeach[i].address3;
+                    myH34.textContent = newportBeach[i].phoneNumber;
+                    myH21.textContent = newportBeach[i].services;
+                    myPara1.textContent = newportBeach[i].services1;
+                    myPara2.textContent = newportBeach[i].services2;
+                    myPara3.textContent = newportBeach[i].services3;
+                    myPara4.textContent = newportBeach[i].services4;
+                    myH22.textContent = newportBeach[i].history;
+                    myPara5.textContent = newportBeach[i].history1;
+                    myPara6.textContent = newportBeach[i].history2;
+                    myPara7.textContent = newportBeach[i].history3;
+                    myH23.textContent = newportBeach[i].ordinanceSchedule;
+                    myPara8.textContent = newportBeach[i].ordinanceSchedule1;
+                    myPara9.textContent = newportBeach[i].ordinanceSchedule2;
+                    myPara10.textContent = newportBeach[i].ordinanceSchedule3;
+                    myH24.textContent = newportBeach[i].sessionSchedule;
+                    myPara11.textContent = newportBeach[i].sessionSchedule1;
+                    myPara12.textContent = newportBeach[i].sessionSchedule2;
+                    myPara13.textContent = newportBeach[i].sessionSchedule3;
+                    myPara14.textContent = newportBeach[i].sessionSchedule4;
+                    myPara15.textContent = newportBeach[i].sessionSchedule5;
+                    myPara16.textContent = newportBeach[i].sessionSchedule6;
+                    myPara17.textContent = newportBeach[i].sessionSchedule7;
+                    myPara18.textContent = newportBeach[i].sessionSchedule8;
+                    myPara19.textContent = newportBeach[i].sessionSchedule9;
+                    myPara20.textContent = newportBeach[i].sessionSchedule10;
+                    myPara21.textContent = newportBeach[i].sessionSchedule11;
+                    myPara22.textContent = newportBeach[i].sessionSchedule12;
+                    myPara23.textContent = newportBeach[i].sessionSchedule13;
+                    myH25.textContent = newportBeach[i].templeClosureSchedule;
+                    myPara24.textContent = newportBeach[i].templeClosureSchedule1;
+                    myPara25.textContent = newportBeach[i].templeClosureSchedule2;
+                    myPara26.textContent = newportBeach[i].templeClosureSchedule3;
+                    myPara27.textContent = newportBeach[i].templeClosureSchedule4;
+                    myPara28.textContent = newportBeach[i].templeClosureSchedule5;
+                    myPara29.textContent = newportBeach[i].templeClosureSchedule6;
+                    myPara30.textContent = newportBeach[i].templeClosureSchedule7;
+                    myPara31.textContent = newportBeach[i].templeClosureSchedule8;
                 
                 myArticle.appendChild(myH31);
                 myArticle.appendChild(myH32);
@@ -194,7 +193,7 @@
             </script>
 
             <section class="stats">
-                <h3>Weather in Orlando, Florida</h3>
+                <h3>Weather in Newport Beach, California</h3>
                 <p>Currently: <span id="current"></span></p>
                 <p>Temperature: <span id="temp"></span> F</p>
                 <p>Humidity: <span id="humid"></span></p>
