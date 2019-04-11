@@ -1,53 +1,52 @@
 {
-    "newportBeach" : [
-    {
-      "address": [
-      "9000 Windy Ridge Rd",
-      "Windermere FL 34786-8347",
-      "United States"
-      ],
-      "phoneNumber": "(1) 407-876-0022",
-      "services": [
-        "Clothing rental available",
-        "No cafeteria available",
-        "No patron housing available",
-        "Distribution center nearby"
-      ],
-      "history": [
-        "April 6th, 1991      Announced",
-        "June 20th, 1992      Groundbreaking",
-        "October 9th, 1994    Dedicated"
-      ],
-      "ordinanceSchedule": [
-      "8:30 AM - 4:30 PM      Family Priority Time - Appointments Only",
-      "4:30 PM - 6:30 PM      Walk-ins and Appointments",
-      "6:30 PM - 8:30 PM      Church Groups - Walk-ins and Appointments"
-      ],
-      "sessionSchedule" : [
-      "8:00 AM                Walk-ins and Appointments",
-      "9:00 AM                Walk-ins and Appointments",
-      "10:00 AM               Walk-ins and Appointments",
-      "11:00 AM               Walk-ins and Appointments",
-      "12:00 PM               Walk-ins and Appointments",
-      " 1:00 PM               Walk-ins and Appointments",
-      " 2:00 PM               Walk-ins and Appointments",
-      " 3:00 PM               Walk-ins and Appointments",
-      " 4:00 PM               Walk-ins and Appointments",
-      " 5:30 PM               Walk-ins and Appointments",
-      " 6:15 PM               Walk-ins and Appointments",
-      " 7:00 PM               Walk-ins and Appointments",
-      " 7:30 PM               Walk-ins and Appointments"
-      ],
-      "templeClosureSchedule": [
-      "2019",
-      "Monday, 24 June 2019 - Monday, 8 July 2019",
-      "Saturday, 5 October 2019",
-      "Wednesday, 27 November 2019 (Limited Hours)",
-      "Thursday, 28 November 2019",
-      "Monday, 2 December 2019 - Monday, 16 December 2019",
-      "Tuesday, 24 December 2019 - Wednesday, 25 December 2019",
-      "Tuesday, 31 December 2019 - Wednesday, 1 January 2020"
-      ]
-    }
-   ]
+  "orlando" : [
+  {
+    "address1": "9000 Windy Ridge Rd",
+    "address2": "Windermere FL 34786-8347",
+    "address3": "United States",
+
+    "phoneNumber": "(1) 407-876-0022",
+   
+    "services": "Services",
+    "services1": "Clothing rental available",
+    "services2": "No cafeteria available",
+    "services3": "No patron housing available",
+    "services4": "Distribution center nearby",
+    
+    "history": "Temple History",
+    "history1": "April 6th, 1991 - Announced",
+    "history2": "June 20th, 1992 - Groundbreaking",
+    "history3": "October 9th, 1994 - Dedicated",
+
+    "ordinanceSchedule": "Ordinance Schedule",
+    "ordinanceSchedule1": "8:30 AM - 4:30 PM - Family Priority Time - Appointments Only",
+    "ordianceSchedule2": "4:30 PM - 6:30 PM - Walk-ins and Appointments",
+    "ordianceSchedule3": "6:30 PM - 8:30 PM - Church Groups - Walk-ins and Appointments",
+
+    "sessionSchedule": "Session Schedule",
+    "sessionSchedule1": " 8:00 AM - Walk-ins and Appointments",
+    "sessionSchedule2": " 9:00 AM - Walk-ins and Appointments",
+    "sessionSchedule3": "10:00 AM - Walk-ins and Appointments",
+    "sessionSchedule4": "11:00 AM - Walk-ins and Appointments",
+    "sessionSchedule5": "12:00 PM - Walk-ins and Appointments",
+    "sessionSchedule6": " 1:00 PM - Walk-ins and Appointments",
+    "sessionSchedule7": " 2:00 PM - Walk-ins and Appointments",
+    "sessionSchedule8": " 3:00 PM - Walk-ins and Appointments",
+    "sessionSchedule9": " 4:00 PM - Walk-ins and Appointments",
+    "sessionSchedule10": " 5:30 PM - Walk-ins and Appointments",
+    "sessionSchedule11": " 6:15 PM - Walk-ins and Appointments",
+    "sessionSchedule12": " 7:00 PM - Walk-ins and Appointments",
+    "sessionSchedule13": " 7:30 PM - Walk-ins and Appointments",
+    
+    "templeClosureSchedule": "Temple Closure Dates",
+    "templeClosureSchedule1": "2019",
+    "templeClosureSchedule2": "Monday, 24 June 2019 - Monday, 8 July 2019",
+    "templeClosureSchedule3": "Saturday, 5 October 2019",
+    "templeClosureSchedule4": "Wednesday, 27 November 2019 (Limited Hours)",
+    "templeClosureSchedule5": "Thursday, 28 November 2019",
+    "templeClosureSchedule6": "Monday, 2 December 2019 - Monday, 16 December 2019",
+    "templeClosureSchedule7": "Tuesday, 24 December 2019 - Wednesday, 25 December 2019",
+    "templeClosureSchedule8": "Tuesday, 31 December 2019 - Wednesday, 1 January 2020"
   }
+ ]
+}

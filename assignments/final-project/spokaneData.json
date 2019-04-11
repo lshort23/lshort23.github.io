@@ -1,53 +1,47 @@
 {
-    "spokane" : [
-    {
-      "address": [
-      "9000 Windy Ridge Rd",
-      "Windermere FL 34786-8347",
-      "United States"
-      ],
-      "phoneNumber": "(1) 407-876-0022",
-      "services": [
-        "Clothing rental available",
-        "No cafeteria available",
-        "No patron housing available",
-        "Distribution center nearby"
-      ],
-      "history": [
-        "April 6th, 1991      Announced",
-        "June 20th, 1992      Groundbreaking",
-        "October 9th, 1994    Dedicated"
-      ],
-      "ordinanceSchedule": [
-      "8:30 AM - 4:30 PM      Family Priority Time - Appointments Only",
-      "4:30 PM - 6:30 PM      Walk-ins and Appointments",
-      "6:30 PM - 8:30 PM      Church Groups - Walk-ins and Appointments"
-      ],
-      "sessionSchedule" : [
-      "8:00 AM                Walk-ins and Appointments",
-      "9:00 AM                Walk-ins and Appointments",
-      "10:00 AM               Walk-ins and Appointments",
-      "11:00 AM               Walk-ins and Appointments",
-      "12:00 PM               Walk-ins and Appointments",
-      " 1:00 PM               Walk-ins and Appointments",
-      " 2:00 PM               Walk-ins and Appointments",
-      " 3:00 PM               Walk-ins and Appointments",
-      " 4:00 PM               Walk-ins and Appointments",
-      " 5:30 PM               Walk-ins and Appointments",
-      " 6:15 PM               Walk-ins and Appointments",
-      " 7:00 PM               Walk-ins and Appointments",
-      " 7:30 PM               Walk-ins and Appointments"
-      ],
-      "templeClosureSchedule": [
-      "2019",
-      "Monday, 24 June 2019 - Monday, 8 July 2019",
-      "Saturday, 5 October 2019",
-      "Wednesday, 27 November 2019 (Limited Hours)",
-      "Thursday, 28 November 2019",
-      "Monday, 2 December 2019 - Monday, 16 December 2019",
-      "Tuesday, 24 December 2019 - Wednesday, 25 December 2019",
-      "Tuesday, 31 December 2019 - Wednesday, 1 January 2020"
-      ]
-    }
-   ]
+  "spokane" : [
+  {
+    "address1": "13710 E 40th Ave",
+    "address2": "Spokane WA 99206",
+    "address3": "United States",
+
+    "phoneNumber": "(1) 509-926-2824",
+   
+    "services": "Services",
+    "services1": "No clothing rental available",
+    "services2": "No cafeteria available",
+    "services3": "No patron housing available",
+    "services4": "Distribution center nearby",
+    
+    "history": "Temple History",
+    "history1": "August 13th, 1998 - Announced",
+    "history2": "October 10th, 1998 - Groundbreaking",
+    "history3": "August 21st, 1999 - Dedicated",
+
+    "ordinanceSchedule": "Ordinance Schedule",
+    "ordinanceSchedule1": "10:00 AM - 12:00 PM - Walk-ins and Appointments",
+    "ordianceSchedule2": "3:00 PM - 6:00 PM - Appointment Only",
+    "ordianceSchedule3": "6:00 PM - 8:00 PM - Church Groups - Appointments Only",
+
+    "sessionSchedule": "Session Schedule",
+    "sessionSchedule1": "8:30 AM - Walk-ins and Appointments",
+    "sessionSchedule2": "10:00 AM - Walk-ins and Appointments",
+    "sessionSchedule3": "11:30 AM - Walk-ins and Appointments",
+    "sessionSchedule4": "12:30 PM - Walk-ins and Appointments",
+    "sessionSchedule5": "3:00 PM - Walk-ins and Appointments",
+    "sessionSchedule6": "4:30 PM - Walk-ins and Appointments",
+    "sessionSchedule7": "6:00 PM - Walk-ins and Appointments",
+    "sessionSchedule8": "7:00 PM - Walk-ins and Appointments",
+    
+    "templeClosureSchedule": "Temple Closure Dates",
+    "templeClosureSchedule1": "2019",
+    "templeClosureSchedule2": "Monday, 1 April 2019 - Monday, 22 April 2019",
+    "templeClosureSchedule3": "Thursday, 4 July 2019",
+    "templeClosureSchedule4": "Monday, 30 September 2019 - Monday, 14 October 2019",
+    "templeClosureSchedule5": "Wednesday, 27 November 2019 (Limited Hours)",
+    "templeClosureSchedule6": "Thursday, 28 November 2019",
+    "templeClosureSchedule7": "Tuesday, 24 December 2019 - Wednesday, 25 December 2019",
+    "templeClosureSchedule8": "Tuesday, 31 December 2019 - Wednesday, 1 January 2020"
   }
+ ]
+}
