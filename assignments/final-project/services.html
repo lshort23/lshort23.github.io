@@ -3,74 +3,77 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-        <title>Preston Weather Page</title>
-        <meta name="description" content="The home page for the Preston Weather Page.">
+        <title>The Temple Inn & Suites</title>
+        <meta name="description" content="The website for temple inn and suites">
         <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/small.css">
-        <link rel="stylesheet" media="screen and (min-width: 1025px)" href="css/large.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat">
-        <script type="text/javascript" src="script/currentdate.js"></script>
-        <script type="text/javascript" src="script/windchill.js"></script>
-
+        <link rel="stylesheet" media="screen and (max-width: 600px)" href="css/small.css">
+        <link rel="stylesheet" media="screen and (max-width: 992px)" href="css/medium.css">
+        <link rel="stylesheet" href="css/large.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat|Playfair+Display+SC" rel="stylesheet">
+        <script type="text/javascript" src=""></script>
     </head>
-    <body onload="windChill()">
+    <body>
 
         <header>
-                <img class="logo" src="images/sivvus-weather-symbols-2-optimized.png" alt="Preston Weather Page Logo" width="55px" height="auto">
-                <h1 class="heading">Preston Weather Page</h1>
-                <div class="motto">We've got you covered</div>     
+            <h1 class="heading">The Temple Inn & Suites</h1>    
         </header>
 
         <nav>
-            <ul class="navigation">
-                    <li><a href="#" onclick="toggleMenu()">Menu</a></li>
-                    <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
-                    <li><a href="preston.html" onclick="toggleMenu()">Preston</a></li>
-                    <li><a href="sodasprings.html" onclick="toggleMenu()">Soda Springs</a></li>
-                    <li><a href="fishhaven.html" onclick="toggleMenu()">Fish Haven</a></li>
-                    <li><a href="stormcenter.html" onclick="toggleMenu()">Storm Center</a></li>
-                    <li><a href="gallery.html" onclick="toggleMenu()">Gallery</a></li>
-            </ul>
-
-        </nav>
+                <ul class="navigation">
+                        <li><a href="#" onclick="toggleMenu()">Menu</a></li>
+                        <li id="active"><a href="index.html" onclick="toggleMenu()">Home</a></li>
+                        <li><div class="dropdown">
+                                <button class="dropbtn">Temples</button>
+                                <div class="dropdown-content">
+                                  <a href="orlando.html">Orlando, FL</a>
+                                  <a href="spokane.html">Spokane, WA</a>
+                                  <a href="newport-beach.html">Newport Beach, CA</a>
+                                  <a href="baton-rouge.html">Baton Rouge, LA</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="reservations.html" onclick="toggleMenu()">Reservations</a></li>
+                        <li><a href="services.html" onclick="toggleMenu()">Services</a></li>
+                        <li><div class="dropdown">
+                                <button class="dropbtn">Services</button>
+                                <div class="dropdown-content">
+                                    <a href="services.html">Hotel Amenities</a>
+                                    <a href="receptions.html">Receptions</a>
+                                  <a href="full-time.html">Full Time Temple Missionaries</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="contact.html" onclick="toggleMenu()">Contact</a></li>
+                </ul>
+            </nav>
 
         <main>
-            <h2>Fish Haven, Idaho</h2>
-            <div class="herodiv">
-                <figure class="heroimage">
-                <picture>
-                    <source media="(min-width: 466px)" srcset="images/hero-image-optimized-large.jpg">
-                    <source media="(max-width: 465px)" srcset="images/hero-image-optimized-small.jpg">
-                    <img src="images/hero-image-optimized.jpg" alt="Preston, Idaho" style="width:auto;">
-                  </picture>
-                </figure>
-                <section class="stats">
-                    <h3>Weather Summary</h3>
-                    <p>Currently: <span id="current"></span></p>
-                    <p>Temperature: <span id="temp"></span> F</p>
-                    <p>Humidity: <span id="humid"></span></p>
-                    <p>Wind Speed: <span id="wind"></span> mph</p>
-                    <p>Wind Chill: <span id='output'></span> F</p>
-                </section>
-                </div>
+            <h2>We strive to make your stay with us as comfortable as possible. Here is what we offer to you with each stay.</h2>
+            <br>
+            <h3>Specialized Services</h3>
+            <ul class="amenities">
+                <li>Free access to changing rooms and bathroom facilities for temple patrons who have traveled far and need to change to and from church clothes</li>
+                <li>A playroom and low-cost, short-term babysitting services for the children of patrons</li>
+                <li>Long-term stay accommodations in kitchenette suites for <a href="full-time.html">full-time temple missionaries</a></li>
+                <li>Temple history themed <a href="receptions.html">reception and sitting area</a></li>
+                <li><a href="receptions.html">A wedding reception hall</a> that can be easily customized with a simple catering menu and kitchen access for food preparation and serving</li>
+                <li>A family search center that supports family search and ordinance work</li>
+            </ul>
+            <br>
+            <h3>Free Amenities</h3>
+                <ul class="amenities">
+                    <li>Breakfast</li>
+                    <li>Exercise/workout room</li>
+                    <li>Indoor pool</li>
+                    <li>WiFi high-speed internet access and smart TVs</li>
+                    <li>Parking</li>
+                    <li>Temple shuttle</li>
+                    <li>Family history consultation and family ordinance card service</li>
+                </ul>
         </main>
 
-        <div id="article">
-        <article>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-        </article>
-        </div>
-
-        <section>
-                <img class="map" src="images/idaho-state-map.jpg" alt="Idaho State Map" width="300px" height="auto"> 
-        </section>
-
         <footer>
-            <body onload="myfunction()">
-            <p id="demo"></p>
-            <p>Information from <a href="https://openweathermap.org/">Open Weather Map</a>.</p>
+            <p>2019 The Temple Inn & Suites | <a href="#">Resources</a></p>
         </footer>
-        <script src="script/weatherapifishhaven.js"></script>
     </body>
 </html>
