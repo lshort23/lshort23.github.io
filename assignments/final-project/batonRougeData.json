@@ -1,11 +1,11 @@
 {
-  "orlando" : [
+  "batonRouge" : [
   {
-    "address1": "9000 Windy Ridge Rd",
-    "address2": "Windermere FL 34786-8347",
+    "address1": "10339 Highland Rd",
+    "address2": "Baton Rouge LA 70810",
     "address3": "United States",
 
-    "phoneNumber": "(1) 407-876-0022",
+    "phoneNumber": "(1) 225-769-1197",
    
     "services": "Services",
     "services1": "Clothing rental available",
@@ -14,9 +14,9 @@
     "services4": "Distribution center nearby",
     
     "history": "Temple History",
-    "history1": "April 6th, 1991 - Announced",
-    "history2": "June 20th, 1992 - Groundbreaking",
-    "history3": "October 9th, 1994 - Dedicated",
+    "history1": "October 14th, 1998 - Announced",
+    "history2": "May 8th, 1999 - Groundbreaking",
+    "history3": "July 16th, 2000 - Dedicated",
 
     "ordinanceSchedule": "Ordinance Schedule",
     "ordinanceSchedule1": "8:30 AM - 4:30 PM - Family Priority Time - Appointments Only",
@@ -39,14 +39,7 @@
     "sessionSchedule13": " 7:30 PM - Walk-ins and Appointments",
     
     "templeClosureSchedule": "Temple Closure Dates",
-    "templeClosureSchedule1": "2019",
-    "templeClosureSchedule2": "Monday, 24 June 2019 - Monday, 8 July 2019",
-    "templeClosureSchedule3": "Saturday, 5 October 2019",
-    "templeClosureSchedule4": "Wednesday, 27 November 2019 (Limited Hours)",
-    "templeClosureSchedule5": "Thursday, 28 November 2019",
-    "templeClosureSchedule6": "Monday, 2 December 2019 - Monday, 16 December 2019",
-    "templeClosureSchedule7": "Tuesday, 24 December 2019 - Wednesday, 25 December 2019",
-    "templeClosureSchedule8": "Tuesday, 31 December 2019 - Wednesday, 1 January 2020"
+    "templeClosureSchedule1": "Currently closed for Renovations"
   }
  ]
 }

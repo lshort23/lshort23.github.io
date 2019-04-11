@@ -38,32 +38,31 @@
         </nav>
 
         <main>
-            <h2>Orlando, Florida Temple</h2>
-            <p>The first temple built in Florida, the Orlando Florida Temple was one of two temples dedicated by President Howard W. Hunter.</p>
+            <h2>Baton Rouge, Louisiana Temple</h2>
+            <p>fjdkla;fieaofjdiasfjdkla;ifndsaeysla;fiodsa;lidsey</p>
             
-            <img src="#" alt="">
+            <img src="images/baton-rouge-temple.jpg" alt="Baton Rouge Temple" width="800px">
 
             <section>
-                <h1>Here is a heading</h1>
 
             </section>
 
             <script>
                 var section = document.querySelector('section');
-                var requestURL = 'https://lshort23.github.io/assignments/final-project/orlandoData.json';
+                var requestURL = 'https://lshort23.github.io/assignments/final-project/batonRougeData.json';
                 var request = new XMLHttpRequest();
                 request.open('GET', requestURL);
                 request.responseType = 'json';
                 request.send();
                 request.onload = function() {
-                var orlandoData = request.response;
-                showOrlando(orlandoData);
+                var batonRougeData = request.response;
+                showBatonRouge(batonRougeData);
                 }
                 
-                function showOrlando(jsonObj) {
-                    var orlando = jsonObj['orlando'];
+                function showBatonRouge(jsonObj) {
+                    var batonRouge = jsonObj['batonRouge'];
                       
-                    for (var i = 0; i < orlando.length; i++) {
+                    for (var i = 0; i < batonRouge.length; i++) {
                         var myArticle = document.createElement('article');
                         var myH31 = document.createElement('h3');
                         var myH32 = document.createElement('h3');
@@ -106,46 +105,46 @@
                         var myPara30 = document.createElement('p');
                         var myPara31 = document.createElement('p');
                 
-                    myH31.textContent = orlando[i].address1;
-                    myH32.textContent = orlando[i].address2;
-                    myH33.textContent = orlando[i].address3;
-                    myH34.textContent = orlando[i].phoneNumber;
-                    myH21.textContent = orlando[i].services;
-                    myPara1.textContent = orlando[i].services1;
-                    myPara2.textContent = orlando[i].services2;
-                    myPara3.textContent = orlando[i].services3;
-                    myPara4.textContent = orlando[i].services4;
-                    myH22.textContent = orlando[i].history;
-                    myPara5.textContent = orlando[i].history1;
-                    myPara6.textContent = orlando[i].history2;
-                    myPara7.textContent = orlando[i].history3;
-                    myH23.textContent = orlando[i].ordinanceSchedule;
-                    myPara8.textContent = orlando[i].ordinanceSchedule1;
-                    myPara9.textContent = orlando[i].ordinanceSchedule2;
-                    myPara10.textContent = orlando[i].ordinanceSchedule3;
-                    myH24.textContent = orlando[i].sessionSchedule;
-                    myPara11.textContent = orlando[i].sessionSchedule1;
-                    myPara12.textContent = orlando[i].sessionSchedule2;
-                    myPara13.textContent = orlando[i].sessionSchedule3;
-                    myPara14.textContent = orlando[i].sessionSchedule4;
-                    myPara15.textContent = orlando[i].sessionSchedule5;
-                    myPara16.textContent = orlando[i].sessionSchedule6;
-                    myPara17.textContent = orlando[i].sessionSchedule7;
-                    myPara18.textContent = orlando[i].sessionSchedule8;
-                    myPara19.textContent = orlando[i].sessionSchedule9;
-                    myPara20.textContent = orlando[i].sessionSchedule10;
-                    myPara21.textContent = orlando[i].sessionSchedule11;
-                    myPara22.textContent = orlando[i].sessionSchedule12;
-                    myPara23.textContent = orlando[i].sessionSchedule13;
-                    myH25.textContent = orlando[i].templeClosureSchedule;
-                    myPara24.textContent = orlando[i].templeClosureSchedule1;
-                    myPara25.textContent = orlando[i].templeClosureSchedule2;
-                    myPara26.textContent = orlando[i].templeClosureSchedule3;
-                    myPara27.textContent = orlando[i].templeClosureSchedule4;
-                    myPara28.textContent = orlando[i].templeClosureSchedule5;
-                    myPara29.textContent = orlando[i].templeClosureSchedule6;
-                    myPara30.textContent = orlando[i].templeClosureSchedule7;
-                    myPara31.textContent = orlando[i].templeClosureSchedule8;
+                    myH31.textContent = batonRouge[i].address1;
+                    myH32.textContent = batonRouge[i].address2;
+                    myH33.textContent = batonRouge[i].address3;
+                    myH34.textContent = batonRouge[i].phoneNumber;
+                    myH21.textContent = batonRouge[i].services;
+                    myPara1.textContent = batonRouge[i].services1;
+                    myPara2.textContent = batonRouge[i].services2;
+                    myPara3.textContent = batonRouge[i].services3;
+                    myPara4.textContent = batonRouge[i].services4;
+                    myH22.textContent = batonRouge[i].history;
+                    myPara5.textContent = batonRouge[i].history1;
+                    myPara6.textContent = batonRouge[i].history2;
+                    myPara7.textContent = batonRouge[i].history3;
+                    myH23.textContent = batonRouge[i].ordinanceSchedule;
+                    myPara8.textContent = batonRouge[i].ordinanceSchedule1;
+                    myPara9.textContent = batonRouge[i].ordinanceSchedule2;
+                    myPara10.textContent = batonRouge[i].ordinanceSchedule3;
+                    myH24.textContent = batonRouge[i].sessionSchedule;
+                    myPara11.textContent = batonRouge[i].sessionSchedule1;
+                    myPara12.textContent = batonRouge[i].sessionSchedule2;
+                    myPara13.textContent = batonRouge[i].sessionSchedule3;
+                    myPara14.textContent = batonRouge[i].sessionSchedule4;
+                    myPara15.textContent = batonRouge[i].sessionSchedule5;
+                    myPara16.textContent = batonRouge[i].sessionSchedule6;
+                    myPara17.textContent = batonRouge[i].sessionSchedule7;
+                    myPara18.textContent = batonRouge[i].sessionSchedule8;
+                    myPara19.textContent = batonRouge[i].sessionSchedule9;
+                    myPara20.textContent = batonRouge[i].sessionSchedule10;
+                    myPara21.textContent = batonRouge[i].sessionSchedule11;
+                    myPara22.textContent = batonRouge[i].sessionSchedule12;
+                    myPara23.textContent = batonRouge[i].sessionSchedule13;
+                    myH25.textContent = batonRouge[i].templeClosureSchedule;
+                    myPara24.textContent = batonRouge[i].templeClosureSchedule1;
+                    myPara25.textContent = batonRouge[i].templeClosureSchedule2;
+                    myPara26.textContent = batonRouge[i].templeClosureSchedule3;
+                    myPara27.textContent = batonRouge[i].templeClosureSchedule4;
+                    myPara28.textContent = batonRouge[i].templeClosureSchedule5;
+                    myPara29.textContent = batonRouge[i].templeClosureSchedule6;
+                    myPara30.textContent = batonRouge[i].templeClosureSchedule7;
+                    myPara31.textContent = batonRouge[i].templeClosureSchedule8;
                 
                 myArticle.appendChild(myH31);
                 myArticle.appendChild(myH32);
@@ -194,7 +193,7 @@
             </script>
 
             <section class="stats">
-                <h3>Weather in Orlando, Florida</h3>
+                <h3>Weather in Baton Rouge, Louisiana</h3>
                 <p>Currently: <span id="current"></span></p>
                 <p>Temperature: <span id="temp"></span> F</p>
                 <p>Humidity: <span id="humid"></span></p>
