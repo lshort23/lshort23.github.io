@@ -3,35 +3,39 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-        <title>Preston Weather Page</title>
+        <title>The Temple Inn & Suites</title>
         <meta name="description" content="The home page for the Preston Weather Page.">
         <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/small.css">
-        <link rel="stylesheet" media="screen and (min-width: 1025px)" href="css/large.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat">
-        <script type="text/javascript" src="script/currentdate.js"></script>
-        <script type="text/javascript" src="script/windchill.js"></script>
-
+        <link rel="stylesheet" media="screen and (max-width: 600px)" href="css/small.css">
+        <link rel="stylesheet" media="screen and (max-width: 992px)" href="css/medium.css">
+        <link rel="stylesheet" href="css/large.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat|Playfair+Display+SC" rel="stylesheet">
+        <script type="text/javascript" src=""></script>
     </head>
-    <body onload="windChill()">
+    <body onload="myFunction()">
 
         <header>
-                <img class="logo" src="images/sivvus-weather-symbols-2-optimized.png" alt="Preston Weather Page Logo" width="55px" height="auto">
-                <h1 class="heading">Preston Weather Page</h1>
-                <div class="motto">We've got you covered</div>     
+            <h1 class="heading">The Temple Inn & Suites</h1>    
         </header>
 
         <nav>
             <ul class="navigation">
-                <li><a href="#" onclick="toggleMenu()">Menu</a></li>
-                <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
-                <li><a href="preston.html" onclick="toggleMenu()">Preston</a></li>
-                <li><a href="sodasprings.html" onclick="toggleMenu()">Soda Springs</a></li>
-                <li><a href="fishhaven.html" onclick="toggleMenu()">Fish Haven</a></li>
-                <li><a href="stormcenter.html" onclick="toggleMenu()">Storm Center</a></li>
-                <li><a href="gallery.html" onclick="toggleMenu()">Gallery</a></li>
+                    <li><a href="#" onclick="toggleMenu()">Menu</a></li>
+                    <li id="active"><a href="index.html" onclick="toggleMenu()">Home</a></li>
+                    <li><div class="dropdown">
+                            <button class="dropbtn">Temples</button>
+                            <div class="dropdown-content">
+                              <a href="orlando.html">Orlando, FL</a>
+                              <a href="spokane.html">Spokane, WA</a>
+                              <a href="newport-beach.html">Newport Beach, CA</a>
+                              <a href="baton-rouge.html">Baton Rouge, LA</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="reservations.html" onclick="toggleMenu()">Reservations</a></li>
+                    <li><a href="services.html" onclick="toggleMenu()">Services</a></li>
+                    <li><a href="contact.html" onclick="toggleMenu()">Contact</a></li>
             </ul>
-
         </nav>
 
         <main>
