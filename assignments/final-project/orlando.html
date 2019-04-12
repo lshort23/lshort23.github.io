@@ -21,8 +21,8 @@
         <nav>
                 <ul class="navigation">
                         <li><a href="#" onclick="toggleMenu()">Menu</a></li>
-                        <li id="active"><a href="index.html" onclick="toggleMenu()">Home</a></li>
-                        <li><div class="dropdown">
+                        <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
+                        <li class="dropdown">
                                 <button class="dropbtn">Temples</button>
                                 <div class="dropdown-content">
                                   <a href="orlando.html">Orlando, FL</a>
@@ -30,18 +30,15 @@
                                   <a href="newport-beach.html">Newport Beach, CA</a>
                                   <a href="baton-rouge.html">Baton Rouge, LA</a>
                                 </div>
-                            </div>
                         </li>
                         <li><a href="reservations.html" onclick="toggleMenu()">Reservations</a></li>
-                        <li><a href="services.html" onclick="toggleMenu()">Services</a></li>
-                        <li><div class="dropdown">
+                        <li class="dropdown">
                                 <button class="dropbtn">Services</button>
                                 <div class="dropdown-content">
                                     <a href="services.html">Hotel Amenities</a>
                                     <a href="receptions.html">Receptions</a>
                                   <a href="full-time.html">Full Time Temple Missionaries</a>
                                 </div>
-                            </div>
                         </li>
                         <li><a href="contact.html" onclick="toggleMenu()">Contact</a></li>
                 </ul>
@@ -51,7 +48,7 @@
             <h2>Orlando, Florida Temple</h2>
             <p>The Orlando Florida Temple is the 48th constructed and 46th operating temple of The Church of Jesus Christ of Latter-day Saints. Located near Windermere, it was built with a modern single-spire design. It is the second largest LDS temple in the Eastern United States, after the Washington D.C. Temple. The LDS temple in Orlando, Florida was announced on April 6, 1991, with groundbreaking on June 20, 1992, and dedicated on October 9, 1994 by LDS Church president Howard W. Hunter. The temple was built on a 13-acre plot, has 4 ordinance rooms and 5 sealing rooms, and has a total floor area of 70,000 square feet. Orlando is one of two temples dedicated by Hunter, the other is the Bountiful, Utah Temple.</p>
             
-            <img src="images/orlando-temple-2.jpg" alt="Orlando, Florida Temple" width="800px">
+            <img class="temple" src="images/orlando-temple-2.jpg" alt="Orlando, Florida Temple" width="600px">
 
             <section>
 
@@ -201,17 +198,19 @@
                 }
             }        
             </script>
-
+            <br>
             <section class="stats">
                 <h3>Weather in Orlando, Florida</h3>
                 <p>Currently: <span id="current"></span>&deg F</p>
                 <p>Temperature: <span id="temp"></span>&deg F</p>
                 <p>Humidity: <span id="humid"></span>%</p>
             </section>
+            <br>
+            <br>
         </main>
 
         <footer>
-            <p>2019 The Temple Inn & Suites | <a href="resources.html">Resources</a></p>
+                <p class="footer">2019 The Temple Inn & Suites | <a href="resources.html">Resources</a></p>
         </footer>
         <script src="script/orlandoweatherapi.js"></script>
     </body>
