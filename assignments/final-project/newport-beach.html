@@ -21,8 +21,8 @@
         <nav>
                 <ul class="navigation">
                         <li><a href="#" onclick="toggleMenu()">Menu</a></li>
-                        <li id="active"><a href="index.html" onclick="toggleMenu()">Home</a></li>
-                        <li><div class="dropdown">
+                        <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
+                        <li class="dropdown">
                                 <button class="dropbtn">Temples</button>
                                 <div class="dropdown-content">
                                   <a href="orlando.html">Orlando, FL</a>
@@ -30,18 +30,15 @@
                                   <a href="newport-beach.html">Newport Beach, CA</a>
                                   <a href="baton-rouge.html">Baton Rouge, LA</a>
                                 </div>
-                            </div>
                         </li>
                         <li><a href="reservations.html" onclick="toggleMenu()">Reservations</a></li>
-                        <li><a href="services.html" onclick="toggleMenu()">Services</a></li>
-                        <li><div class="dropdown">
+                        <li class="dropdown">
                                 <button class="dropbtn">Services</button>
                                 <div class="dropdown-content">
                                     <a href="services.html">Hotel Amenities</a>
                                     <a href="receptions.html">Receptions</a>
                                   <a href="full-time.html">Full Time Temple Missionaries</a>
                                 </div>
-                            </div>
                         </li>
                         <li><a href="contact.html" onclick="toggleMenu()">Contact</a></li>
                 </ul>
@@ -51,7 +48,7 @@
             <h2>Newport Beach, California Temple</h2>
             <p>The Newport Beach California Temple is the 122nd temple of The Church of Jesus Christ of Latter-day Saints. The temple was announced on April 21, 2001 and dedicated by Gordon B. Hinckley on August 28, 2005. At the time of its dedication, it was the sixth operating temple in California. Prior to the dedication, 175,000 people attended an open house to tour the building. The temple was built to serve the 50,000 Latter-day Saints in Orange County at the time.</p>
             
-            <img src="images/newport-beach-temple.jpeg" alt="Newport Beach Temple" width="800px">
+            <img class="temple" src="images/newport-beach-temple.jpeg" alt="Newport Beach Temple" width="600px">
 
             <section>
 
@@ -201,18 +198,20 @@
                 }
             }        
             </script>
-
+            <br>
             <section class="stats">
                 <h3>Weather in Newport Beach, California</h3>
                 <p>Currently: <span id="current"></span>&deg F</p>
                 <p>Temperature: <span id="temp"></span>&deg F</p>
                 <p>Humidity: <span id="humid"></span>%</p>
             </section>
+            <br>
+            <br>
         </main>
 
         <footer>
-            <p>2019 The Temple Inn & Suites | <a href="resources.html">Resources</a></p>
-        </footer>
+                <p class="footer">2019 The Temple Inn & Suites | <a href="resources.html">Resources</a></p>
+            </footer>
         <script src="script/newportbeachweatherapi.js"></script>
     </body>
 </html>
