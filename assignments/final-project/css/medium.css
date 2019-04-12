@@ -63,7 +63,7 @@ nav {
 }
 .navigation li a:hover {
 	background-color:#ffffff;
-  color:#000000;
+  color: #BCD0E0;
 }
 
 .responsive li { display: block; }
@@ -95,7 +95,7 @@ nav {
 
   .navbar a:hover, .dropdown:hover .dropbtn {
     background-color: #ffffff;
-    color: #000000;
+    color: #BCD0E0;
   }
   
   .dropdown-content {
@@ -118,7 +118,7 @@ nav {
   
   .dropdown-content a:hover {
     background-color: #ffffff;
-    color: #000000
+    color: #BCD0E0;
   }
   
   .dropdown:hover .dropdown-content {
