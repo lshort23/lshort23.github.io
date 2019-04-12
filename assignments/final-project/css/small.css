@@ -3,6 +3,7 @@ body {
   margin: 0;
   padding:0;
   height: 100%;
+  margin-bottom: 40px;
 }
 
 /*header*/
@@ -19,6 +20,20 @@ header {
 h1 {
   font-size: 2.2rem;
   text-align: center;
+}
+
+h2 {
+  font-size: 1.8rem;
+  text-align: center;
+  font-family: 'Playfair Display SC', serif;
+  color: #7A9B7E;
+}
+
+h3 {
+  font-size: 1.4rem;
+  text-align: center;
+  font-family: 'Playfair Display SC', serif;
+  color: #7A9B7E;
 }
 
 /* navigation */
@@ -119,3 +134,76 @@ nav {
     right: 0;
     top: 0;
   }
+
+  /* Body */
+
+.templePic {
+  float: left;
+  margin-top: 30px;
+}
+
+p {
+  text-align: center;
+  color: #000000;
+  font-size: 16pt;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.activities {
+  text-align: left;
+  color: #000000;
+  font-size: 15pt;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.words {
+  width: 400px;
+  float: right;
+  padding: 0;
+  padding-top: 20px;
+}
+
+.sectionPic {
+  padding: 50px;
+  margin-top: 30px;
+  float: left;
+}
+
+.button {
+  text-decoration: overline;
+  color: #7A9B7E;
+}
+
+.button:hover {
+  color: #BCD0E0;
+}
+
+main {
+  max-width:900px;margin:0 auto;
+}
+
+.map {
+  float: left;
+  margin-bottom: 80px;
+  margin-top: 50px;
+}
+
+.contactInfo {
+  float: right;
+  margin-top: 100px;
+  width: 400px;
+}
+
+/* Footer */
+
+footer .footer {
+font-size: 14px;
+font-family: 'Montserrat', sans-serif;
+position: fixed;
+Width: 100%;
+bottom: 0;
+height: 20px;
+background-color: #dddddd;
+padding: 10px;
+color: #000000;
+}
