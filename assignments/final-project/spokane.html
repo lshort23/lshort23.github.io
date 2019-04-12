@@ -21,8 +21,8 @@
         <nav>
                 <ul class="navigation">
                         <li><a href="#" onclick="toggleMenu()">Menu</a></li>
-                        <li id="active"><a href="index.html" onclick="toggleMenu()">Home</a></li>
-                        <li><div class="dropdown">
+                        <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
+                        <li class="dropdown">
                                 <button class="dropbtn">Temples</button>
                                 <div class="dropdown-content">
                                   <a href="orlando.html">Orlando, FL</a>
@@ -30,18 +30,15 @@
                                   <a href="newport-beach.html">Newport Beach, CA</a>
                                   <a href="baton-rouge.html">Baton Rouge, LA</a>
                                 </div>
-                            </div>
                         </li>
                         <li><a href="reservations.html" onclick="toggleMenu()">Reservations</a></li>
-                        <li><a href="services.html" onclick="toggleMenu()">Services</a></li>
-                        <li><div class="dropdown">
+                        <li class="dropdown">
                                 <button class="dropbtn">Services</button>
                                 <div class="dropdown-content">
                                     <a href="services.html">Hotel Amenities</a>
                                     <a href="receptions.html">Receptions</a>
                                   <a href="full-time.html">Full Time Temple Missionaries</a>
                                 </div>
-                            </div>
                         </li>
                         <li><a href="contact.html" onclick="toggleMenu()">Contact</a></li>
                 </ul>
@@ -50,8 +47,8 @@
         <main>
             <h2>Spokane, Washington Temple</h2>
             <p>The Spokane Washington Temple is located in the Veradale area of Spokane Valley, Washington, the largest suburb of Spokane and serves about 50,000 LDS church members in eastern Washington, northern Idaho, and western Montana. Its design includes gray granite walls, art glass windows, and a lone spire topped by a golden angel Moroni. The temple has a total floor area of 10,700 square feet, two ordinance rooms, and two sealing rooms.</p>
-            
-            <img src="images/spokane-temple.jpg" alt="Spokane, Washington Temple" width="800px">
+            <br>
+            <img class="temple" src="images/spokane-temple.jpg" alt="Spokane, Washington Temple" width="600px">
 
             <section>
 
@@ -201,17 +198,19 @@
                 }
             }        
             </script>
-
+            <br>
             <section class="stats">
                 <h3>Weather in Spokane, Washington</h3>
                 <p>Currently: <span id="current"></span>&deg F</p>
                 <p>Temperature: <span id="temp"></span>&deg F</p>
                 <p>Humidity: <span id="humid"></span>%</p>
             </section>
+            <br>
+            <br>
         </main>
 
         <footer>
-            <p>2019 The Temple Inn & Suites | <a href="resources.html">Resources</a></p>
+            <p class="footer">2019 The Temple Inn & Suites | <a href="resources.html">Resources</a></p>
         </footer>
         <script src="script/spokaneweatherapi.js"></script>
     </body>
