@@ -149,7 +149,7 @@ p {
   font-family: 'Montserrat', sans-serif;
 }
 
-.activities {
+.list {
   text-align: left;
   color: #000000;
   font-size: 15pt;
@@ -254,6 +254,15 @@ input[type=submit] {
 
  .resources {
   text-align: left;
+}
+
+.link {
+  color: #7A9B7E;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: #BCD0E0;
 }
 
 /* Footer */
