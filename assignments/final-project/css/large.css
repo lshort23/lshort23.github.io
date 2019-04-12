@@ -184,7 +184,7 @@ main {
   width: 400px;
 }
 
-.temple, .hotelImage {
+.temple, .hotelImage, .reception {
   display: block;
   margin-left: auto;
   margin-right: auto;
