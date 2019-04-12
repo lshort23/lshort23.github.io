@@ -21,8 +21,8 @@
         <nav>
                 <ul class="navigation">
                         <li><a href="#" onclick="toggleMenu()">Menu</a></li>
-                        <li id="active"><a href="index.html" onclick="toggleMenu()">Home</a></li>
-                        <li><div class="dropdown">
+                        <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
+                        <li class="dropdown">
                                 <button class="dropbtn">Temples</button>
                                 <div class="dropdown-content">
                                   <a href="orlando.html">Orlando, FL</a>
@@ -30,18 +30,15 @@
                                   <a href="newport-beach.html">Newport Beach, CA</a>
                                   <a href="baton-rouge.html">Baton Rouge, LA</a>
                                 </div>
-                            </div>
                         </li>
                         <li><a href="reservations.html" onclick="toggleMenu()">Reservations</a></li>
-                        <li><a href="services.html" onclick="toggleMenu()">Services</a></li>
-                        <li><div class="dropdown">
+                        <li class="dropdown">
                                 <button class="dropbtn">Services</button>
                                 <div class="dropdown-content">
                                     <a href="services.html">Hotel Amenities</a>
                                     <a href="receptions.html">Receptions</a>
                                   <a href="full-time.html">Full Time Temple Missionaries</a>
                                 </div>
-                            </div>
                         </li>
                         <li><a href="contact.html" onclick="toggleMenu()">Contact</a></li>
                 </ul>
@@ -50,8 +47,8 @@
         <main>
             <h2>Baton Rouge, Louisiana Temple</h2>
             <p>The Baton Rouge Louisiana Temple is the 94th operating temple of The Church of Jesus Christ of Latter-day Saints. The Baton Rouge Louisiana Temple serves 24,000 LDS Church members in the New Orleans, Alexandria, Baton Rouge, Denham Springs, and Monroe Louisiana stakes, as well as members in Gulfport, Hattiesburg, and Jackson, Mississippi stakes. The temple is 10,700 square feet, with a baptistry, two ordinance rooms, two sealing rooms, and a Celestial room. The exterior is made from Imperial Danby White marble quarried in Vermont, and the grounds are beautifully landscaped. The site is 6.3 acres, which includes a meetinghouse.</p>
-            
-            <img src="images/baton-rouge-temple.jpg" alt="Baton Rouge Temple" width="800px">
+            <br>
+            <img class="temple" src="images/baton-rouge-temple.jpg" alt="Baton Rouge Temple" width="600px">
 
             <section>
 
@@ -211,8 +208,8 @@
         </main>
 
         <footer>
-            <p>2019 The Temple Inn & Suites | <a href="resources.html">Resources</a></p>
-        </footer>
+                <p class="footer">2019 The Temple Inn & Suites | <a href="resources.html">Resources</a></p>
+            </footer>
         <script src="script/batonrougeweatherapi.js"></script>
     </body>
 </html>
