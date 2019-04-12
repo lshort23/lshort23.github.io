@@ -242,6 +242,10 @@ input[type=submit] {
  text-align: center;
 }
 
+.resources {
+  text-align: left;
+}
+
 /* Footer */
 
 footer .footer {
